@@ -1,0 +1,22 @@
+{
+	"IT": {
+		"2021": {
+			"team0": {
+				"title": "Air-Alarm",
+				"subTitle": "미세먼지 및 공기질 측정기",
+				"prize": "2021년 대상, 인기상",
+				"members": [
+					"19학번 손창하",
+					"19학번 고병우",
+					"20학번 박진희",
+					"20학번 김하은"
+				],
+				"gitLink": "https://github.com/Air-Alarm",
+				"youtubeLink": "https://youtu.be/v_4Lv-mid30"
+			}
+		},
+		"2020": null
+	},
+	"SW": null,
+	"MC": null
+}

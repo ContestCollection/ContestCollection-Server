@@ -1,0 +1,48 @@
+{
+	"IT": {
+		"2021": {
+			"team1": {
+                    "id": 0,
+					"title": "BOOKREST",
+                    "subTitle": "교내 전공서적 대여 서비스",
+                    "prize": "2021년 은상, 인기상",
+					"members": [
+                        "16학번 유하성",
+                        "18학번 김지인",
+						"20학번 한슬희"
+						
+					],
+					"gitLink": "https://github.com/SKHU-Likelion-9th/BOOKREST",
+					"youtubeLink": "VpKfXxeuBDQ",
+                    "devSkill": [
+                        "Front: Banila JS, HTML, CSS",
+                        "BackEnd: Django, SQLite3",
+                        "etc: Craling, Heroku"
+                    ],
+                    "devDate": "2021/06 ~ 2021/11",
+                    "email": "kji980926@gmail.com"
+					},
+			"team2": {
+                    "id": 1,
+					"title": "Air-Alarm",
+                    "subTitle": "미세먼지 및 공기질 측정기",
+                    "prize": "2021년 대상, 인기상",
+					"members": [
+						"19학번 손창하",
+						"19학번 고병우",
+						"20학번 박진희",
+						"20학번 김하은"
+					],
+					"gitLink": "https://github.com/Air-Alarm",
+					"youtubeLink": "v_4Lv-mid30",
+                    "devSkill": [
+                        "Front: Banila JS, HTML, CSS",
+                        "BackEnd: Django, SQLite3",
+                        "etc: Craling, Heroku"
+                    ],
+                    "devDate": "2021/06 ~ 2021/11",
+                    "email": "kji980926@gmail.com"
+					}
+				}
+        }
+}
