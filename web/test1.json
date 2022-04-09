@@ -60,47 +60,57 @@
 						"202014000 정재빈",
 						"202014000 박형준"
 					],
-					"gitLink": "미등록",
-					"youtubeLink": "5fMI9WA99kk",
-                    "devSkill": [
-                        "BackEnd: Spring Boot, JPA, Jpql, Querydsl"
+                    "calendar": [
+                    "미등록"
                     ],
-                    "devDate": "",
-                    "email": ""
+					"gitLink": "미등록",
+					"youtubeLink": "https://youtu.be/5fMI9WA99kk",
+                    "serviceLink": "미등록",
+                    "skills": [
+                        "Spring Boot", "JPA", "Jpql", "Querydsl"
+                    ]
 					},
             "team4": {
                     "id": 3,
-					"title": "컴비",
+					"name": "컴비",
+                    "award": "미등록",
                     "subTitle": "인공지능 수화 번역 시스템",
-                    "prize": "",
-					"members": [
-						"18학번 김기범"
+                    "summary": "미등록",
+					"category": ["IT"],
+                    "img": "미등록",
+					"people": [
+						"201814000 김기범"
 					],
-					"gitLink": "https://github.com/gibum1228/ComputerVision",
-					"youtubeLink": "Nf7Rrg3ASh0",
-                    "devSkill": [
-                        "Open CV, CUDA"
+                    "calendar": [
+                    "미등록"
                     ],
-                    "devDate": "2021/07 ~ 2021/11",
-                    "email": "gibum1228@gmail.com"
+					"gitLink": "https://github.com/gibum1228/ComputerVision",
+					"youtubeLink": "https://youtu.be/Nf7Rrg3ASh0",
+                    "skills": [
+                        "Open CV", "CUDA"
+                    ]
 					},
             "team5": {
                     "id": 4,
-					"title": "GITY",
+					"name": "GITY",
+                    "award": "미등록",
                     "subTitle": "유튜브 이미지 크롤링 시스템",
-                    "prize": "",
-					"members": [
-						"16학번 정민혁",
-                        "16학번 이제헌",
-                        "18학번 박결"
+					"summary": "미등록",
+                    "category": ["IT"],
+                    "img": "미등록",
+					"people": [
+						"201614000 정민혁",
+                        "201614000 이제헌",
+                        "201814000 박결"
 					],
-					"gitLink": "https://github.com/kyeul611/gity",
-					"youtubeLink": "rQX4ZPzPiqA",
-                    "devSkill": [
-                        "TensorFlow, YOLO, Selenium"
+                    "calendar": [
+                    "미등록"
                     ],
-                    "devDate": "2021/08 ~ 2021/11",
-                    "email": "gyul611@naver.com"
+					"gitLink": "https://github.com/kyeul611/gity",
+					"youtubeLink": "https://youtu.be/rQX4ZPzPiqA",
+                    "skills": [
+                        "TensorFlow", "YOLO", "Selenium"
+                    ]
 					}
 
 
