@@ -1,22 +1,248 @@
 {
 	"IT": {
 		"2021": {
-			"team0": {
-				"title": "Air-Alarm",
-				"subTitle": "미세먼지 및 공기질 측정기",
-				"prize": "2021년 대상, 인기상",
-				"members": [
-					"19학번 손창하",
-					"19학번 고병우",
-					"20학번 박진희",
-					"20학번 김하은"
+			"team1": {
+				"id": 0,
+				"name": "BOOKREST",
+				"award": "2021년 은상 인기상",
+				"subTitle": "BOOKREST는 전공서적을 대여해주는 서비스입니다. BOOKREST에서 쉽고 편하게 원하는 책을 대여하시길 바랍니다.",
+				"summary": "BOOKREST는 전공서적을 대여해주는 서비스입니다. 매 학기마다 전공책을 새로 구매하시나요? 구매하셨다면 가격이 부담스럽지 않으셨나요? BOOKREST는 대학생의, 대학생에 의한, 대학생들을 위해 만들었습니다. BOOK + FOREST = 전공서적을 무료로 쉽게 대여할 수 있는 공유의 숲이라는 뜻으로 저희 BOOKREST에서 쉽고 편하게 원하는 책을 대여하시길 바랍니다. 💡 모든 학과, 모든 학년, 모든 과목의 학기마다 필요한 전공서적을 교내에 여러권 비치하여 책 정보와 수업 정보까지 BOOKREST에서 확인 가능합니다. 👊🏻 BOOKREST는 대여비용이 무료입니다. 일부 보증금 제도를 통해 책의 분실 및 손상 규정에 따라 비용이 청구 될 수 있지만 대여기간과 규정을 잘 지킨다면 누구나 무료로 이용할 수 있습니다.",
+				"category": [
+					"IT"
 				],
-				"gitLink": "https://github.com/Air-Alarm",
-				"youtubeLink": "https://youtu.be/v_4Lv-mid30"
+				"img": "https://user-images.githubusercontent.com/63100352/161198107-0e5ee70d-4949-45ec-b331-8cedf9d8be87.png",
+				"people": [
+					"000000000 유하성",
+					"000000000 김지인",
+					"000000000 윤다혜",
+					"000000000 한슬희"
+				],
+				"calendar": [
+					"2021.4 ~ 5: 아이디어 회의",
+					"6: 페이지 및 DB 구상",
+					"7 ~ 8: 개발 및 배포"
+				],
+				"githubLink": "https://github.com/SKHU-Likelion-9th/BOOKREST",
+				"youtubuLink": "https://youtu.be/VpKfXxeuBDQ",
+				"serviceLink": "https://sharebookrest.herokuapp.com/",
+				"skills": "HTML, JavaScript, Django, SQLite, Heroku"
+			},
+			"team2": {
+				"id": 1,
+				"name": "Air-Alarm",
+				"award": "2021년 대상 인기상",
+				"subTitle": "실시간 미세먼지 및 공기질 측정기",
+				"summary": "미등록",
+				"category": [
+					"IT"
+				],
+				"img": "미등록",
+				"people": [
+					"201914042 손창하",
+					"201914000 고병우",
+					"202014000 김하은",
+					"202014000 박진희"
+				],
+				"calendar": [
+					"2021.6: 아이디어 회의",
+					"7 ~ 8: 개발 및 배포"
+				],
+				"githubLink": "https://github.com/Air-Alarm",
+				"youtubuLink": "https://youtu.be/v_4Lv-mid30",
+				"serviceLink": "미등록",
+				"skills": "Flask, SQLite, Swift"
+			},
+			"team3": {
+				"id": 2,
+				"name": "유저 트레이더스",
+				"award": "미등록",
+				"subTitle": "중고 거래 서비스",
+				"summary": "미등록",
+				"category": [
+					"IT"
+				],
+				"img": "미등록",
+				"people": [
+					"202014000 정재빈",
+					"202014000 박형준"
+				],
+				"calendar": [
+					"미등록"
+				],
+				"githubLink": "미등록",
+				"youtubuLink": "https://youtu.be/5fMI9WA99kk",
+				"serviceLink": "미등록",
+				"skills": "Spring Boot, JPA, Jpql, Querydsl"
+			},
+			"team4": {
+				"id": 3,
+				"name": "컴비",
+				"award": "미등록",
+				"subTitle": "인공지능 수화 번역 시스템",
+				"summary": "미등록",
+				"category": [
+					"IT"
+				],
+				"img": "미등록",
+				"people": [
+					"201814066 김기범"
+				],
+				"calendar": [
+					"미등록"
+				],
+				"githubLink": "https://github.com/gibum1228/ComputerVision",
+				"youtubuLink": "https://youtu.be/Nf7Rrg3ASh0",
+				"serviceLink": "미등록",
+				"skills": "Open CV, CUDA"
+			},
+			"team5": {
+				"id": 4,
+				"name": "GITY",
+				"award": "미등록",
+				"subTitle": "유튜브 이미지 크롤링 시스템",
+				"summary": "미등록",
+				"category": [
+					"IT"
+				],
+				"img": "미등록",
+				"people": [
+					"201614000 정민혁",
+					"201614000 이제헌",
+					"201814000 박결"
+				],
+				"calendar": [
+					"미등록"
+				],
+				"githubLink": "https://github.com/kyeul611/gity",
+				"youtubuLink": "https://youtu.be/rQX4ZPzPiqA",
+				"serviceLink": "미등록",
+				"skills": "TensorFlow, YOLO, Selenium"
+			},
+			"team6": {
+				"id": 5,
+				"name": "ENCHANT-SHOOTER",
+				"award": "미등록",
+				"subTitle": "최대한 오래 살아남아 포인트를 높여라!",
+				"summary": "미등록",
+				"category": [
+					"IT"
+				],
+				"img": "미등록",
+				"people": [
+					"201914140 김승기",
+					"202014049 이유나"
+				],
+				"calendar": [
+					"미등록"
+				],
+				"githubLink": "미등록",
+				"youtubuLink": "https://youtu.be/IpNcAQIRVZk",
+				"serviceLink": "미등록",
+				"skills": "Unity"
+			},
+			"team7": {
+				"id": 6,
+				"name": "the pad",
+				"award": "미등록",
+				"subTitle": "2D 애니메이션 아이패드에 대한 로망",
+				"summary": "미등록",
+				"category": [
+					"IT"
+				],
+				"img": "미등록",
+				"people": [
+					"201813000 김지인",
+					"201813000 채나연"
+				],
+				"calendar": [
+					"2021.9: 디자인",
+					"10: 소스 제작 및 편집"
+				],
+				"githubLink": "미등록",
+				"youtubuLink": "https://youtu.be/MDd2yRxpFGg",
+				"serviceLink": "미등록",
+				"skills": "Photoshop, After Effects"
+			},
+			"team8": {
+				"id": 7,
+				"name": "청약패스",
+				"award": "미등록",
+				"subTitle": "청약 사전 자격 진단 및 관리 서비스",
+				"summary": "미등록",
+				"category": [
+					"IT"
+				],
+				"img": "미등록",
+				"people": [
+					"201632035 한지혜",
+					"201814135 신수연",
+					"201814122 박지우",
+					"201814138 이지은"
+				],
+				"calendar": [
+					"2021.3~4: 계획 및 분석",
+					"5~7: 설계",
+					"8~9: 제작 및 테스트"
+				],
+				"githubLink": "https://github.com/devUnnies/chungyakpass",
+				"youtubuLink": "https://youtu.be/l2FzUBb-25Y",
+				"serviceLink": "미등록",
+				"skills": "React, SpringBoot, AWS EC2"
+			},
+			"team9": {
+				"id": 8,
+				"name": "나만의 웹 다이어리",
+				"award": "미등록",
+				"subTitle": "일정, 계획, 시간표, 버킷리스트 등을 기록하는 나만의 웹 다이어리",
+				"summary": "미등록",
+				"category": [
+					"IT"
+				],
+				"img": "미등록",
+				"people": [
+					"201814038 김보미",
+					"201814096 임수빈"
+				],
+				"calendar": [
+					"2021.3: 주제 설정 및 구현",
+					"4~6: 구현",
+					"9: 코드 보완 및 정리"
+				],
+				"githubLink": "미등록",
+				"youtubuLink": "https://youtu.be/D0JQ6j1O6L8",
+				"serviceLink": "미등록",
+				"skills": "SpringBoot, JSP, MySQL"
+			},
+			"team10": {
+				"id": 9,
+				"name": "Gifty",
+				"award": "미등록",
+				"subTitle": "기프티콘 관리 앱",
+				"summary": "미등록",
+				"category": [
+					"IT"
+				],
+				"img": "미등록",
+				"people": [
+					"000000000 주동석"
+				],
+				"calendar": [
+					"2021.9~10: 개발"
+				],
+				"githubLink": "미등록",
+				"youtubuLink": "https://youtu.be/A_oeMPVDJfY",
+				"serviceLink": "미등록",
+				"skills": "Apple Vision Framework"
 			}
 		},
-		"2020": null
+		"2020": {}
 	},
-	"SW": null,
-	"MC": null
+	"SW": {
+		"2021": {},
+		"2020": {}
+	},
+	"MC": {
+		"2021": {},
+		"2020": {}
+	}
 }

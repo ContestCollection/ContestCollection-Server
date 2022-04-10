@@ -1,5 +1,4 @@
 import sqlite3
-import json
 
 conn = sqlite3.connect('database.db')
 cur = conn.cursor()
@@ -32,7 +31,10 @@ def insertToDB():
     with open("data.txt", "r", encoding='UTF-8') as f:
         temp = []
         for t in f.readlines():
-            temp.append(t.strip())
+            t = t.strip()
+            if t == "NULL":
+                t = None
+            temp.append(t)
         cur.execute("INSERT INTO contestData VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", temp)
         conn.commit()
         conn.close()
@@ -43,6 +45,4 @@ def getFromDB():
     rows = cur.fetchall()
     conn.close()
 
-    print(rows)
-
-getFromDB()
+    return rows
