@@ -239,7 +239,185 @@
 	},
 	"SW": {
 		"2021": {},
-		"2020": {}
+		"2020": {
+			"team1": {
+				"id": 15,
+				"name": "성공회대 기자재대여시스템",
+				"award": "미등록",
+				"subTitle": "성공회대학교 기자재 대여 관리 시스템",
+				"summary": "미등록",
+				"category": [
+					"SW"
+				],
+				"img": "미등록",
+				"people": [
+					"201732009 김윤서",
+					"201732005 김문수"
+				],
+				"calendar": [
+					"미등록"
+				],
+				"githubLink": "https://github.com/nn98/ReeBook",
+				"youtubuLink": "https://youtu.be/ZvTbZSRFcTU",
+				"serviceLink": "미등록",
+				"skills": "MySQL Spring"
+			},
+			"team2": {
+				"id": 16,
+				"name": "성공회대 출석체크",
+				"award": "미등록",
+				"subTitle": "성공회대 QR코드 출석 체크",
+				"summary": "미등록",
+				"category": [
+					"SW"
+				],
+				"img": "미등록",
+				"people": [
+					"201732033 정은애"
+				],
+				"calendar": [
+					"미등록"
+				],
+				"githubLink": "https://github.com/Jungea/QRCheck",
+				"youtubuLink": "https://youtu.be/30qy2W7MbPU",
+				"serviceLink": "미등록",
+				"skills": "JPA Spring Jquery Bootstrap"
+			},
+			"team3": {
+				"id": 18,
+				"name": "냉장고를 부탁해",
+				"award": "미등록",
+				"subTitle": "안드로이드 기반 냉장고 관리 시스템",
+				"summary": "미등록",
+				"category": [
+					"SW"
+				],
+				"img": "미등록",
+				"people": [
+					"201814066 김기범",
+					"201814003 김은정"
+				],
+				"calendar": [
+					"미등록"
+				],
+				"githubLink": "https://github.com/gibum1228/Care_Refrigerator",
+				"youtubuLink": "https://youtu.be/xWzlHa644Ek",
+				"serviceLink": "미등록",
+				"skills": "Firebase Java"
+			}
+		},
+		"2019": {
+			"team1": {
+				"id": 10,
+				"name": "Calcuator",
+				"award": "미등록",
+				"subTitle": "미등록",
+				"summary": "미등록",
+				"category": [
+					"SW"
+				],
+				"img": "미등록",
+				"people": [
+					"000000000 박혜린"
+				],
+				"calendar": [
+					"미등록"
+				],
+				"githubLink": "미등록",
+				"youtubuLink": "미등록",
+				"serviceLink": "미등록",
+				"skills": "미등록"
+			},
+			"team2": {
+				"id": 11,
+				"name": "Monity",
+				"award": "미등록",
+				"subTitle": "Monitoring + Unity",
+				"summary": "미등록",
+				"category": [
+					"SW"
+				],
+				"img": "미등록",
+				"people": [
+					"000000000 김윤서",
+					"000000000 박소정",
+					"000000000 박현렬"
+				],
+				"calendar": [
+					"미등록"
+				],
+				"githubLink": "미등록",
+				"youtubuLink": "미등록",
+				"serviceLink": "미등록",
+				"skills": "미등록"
+			},
+			"team3": {
+				"id": 12,
+				"name": "HalliGalli",
+				"award": "미등록",
+				"subTitle": "미등록",
+				"summary": "미등록",
+				"category": [
+					"SW"
+				],
+				"img": "미등록",
+				"people": [
+					"000000000 정은애"
+				],
+				"calendar": [
+					"미등록"
+				],
+				"githubLink": "미등록",
+				"youtubuLink": "미등록",
+				"serviceLink": "미등록",
+				"skills": "미등록"
+			},
+			"team4": {
+				"id": 13,
+				"name": "우리들의 제목학원",
+				"award": "미등록",
+				"subTitle": "미등록",
+				"summary": "미등록",
+				"category": [
+					"SW"
+				],
+				"img": "미등록",
+				"people": [
+					"000000000 강인성"
+				],
+				"calendar": [
+					"미등록"
+				],
+				"githubLink": "미등록",
+				"youtubuLink": "미등록",
+				"serviceLink": "미등록",
+				"skills": "미등록"
+			},
+			"team5": {
+				"id": 14,
+				"name": "SKHU졸업관리시스템",
+				"award": "미등록",
+				"subTitle": "졸업학점관리시스템",
+				"summary": "미등록",
+				"category": [
+					"SW"
+				],
+				"img": "미등록",
+				"people": [
+					"000000000 김지연",
+					"000000000 오지현",
+					"000000000 이영",
+					"000000000 장예지"
+				],
+				"calendar": [
+					"미등록"
+				],
+				"githubLink": "미등록",
+				"youtubuLink": "미등록",
+				"serviceLink": "미등록",
+				"skills": "미등록"
+			}
+		}
 	},
 	"MC": {
 		"2021": {},

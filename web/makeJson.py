@@ -16,11 +16,13 @@ con_year_IT[2020] = IT_2020_team
 # SW_YEAR_team 팀 나누는 파트
 SW_2021_team = OrderedDict()
 SW_2020_team = OrderedDict()
+SW_2019_team = OrderedDict()
 
 # con_year_SW 파트
 con_year_SW = OrderedDict()
 con_year_SW[2021] = SW_2021_team
 con_year_SW[2020] = SW_2020_team
+con_year_SW[2019] = SW_2019_team
 
 # MC_YEAR_team 팀 나누는 파트
 MC_2021_team = OrderedDict()
@@ -53,7 +55,6 @@ for data in datas:
 
     contestData["people"] = []
     for i in range(9,13):
-        print(data[i])
         if data[i] != None:
             contestData["people"].append(data[i])
 
