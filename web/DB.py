@@ -1,6 +1,11 @@
 import sqlite3
+import os
+import sys
 
-conn = sqlite3.connect('database.db')
+sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
+
+path = os.path.abspath("database.db")
+conn = sqlite3.connect(path, check_same_thread=False)
 cur = conn.cursor()
 
 def mkDB():
@@ -37,12 +42,27 @@ def insertToDB():
             temp.append(t)
         cur.execute("INSERT INTO contestData VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", temp)
         conn.commit()
-        conn.close()
+        #conn.close()
         print("data insert complete")
 
 def getFromDB():
     cur.execute("SELECT rowid, * FROM contestData")
     rows = cur.fetchall()
-    conn.close()
+    #conn.close()
+
+    return rows
+
+def getFromDB2(part, year, id):
+    if part and year:
+        cur.execute(f"SELECT rowid, * FROM contestData WHERE part = '{part}' AND year = '{year}'")
+    elif part:
+        cur.execute(f'SELECT rowid, * FROM contestData WHERE part = "{part}"')
+    elif year:
+        cur.execute(f"SELECT rowid, * FROM contestData WHERE year = '{year}'")
+    elif id:
+        cur.execute(f"SELECT rowid, * FROM contestData WHERE rowid = '{id}'")
+
+    rows = cur.fetchall()
+    #conn.close()
 
     return rows

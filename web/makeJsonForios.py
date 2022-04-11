@@ -51,32 +51,48 @@ def makejson(part, year, id):
         contestData["id"] = id
         id += 1
         contestData["name"] = data[4]
-        contestData["award"] = data[5]
         contestData["subTitle"] = data[6]
-        contestData["summary"] = data[7]
-        contestData["category"] = [data[1]]
+        contestData["contestSort"] = data[1]
+        award = data[5].split()
+        if len(award) > 1:
+            award = award[1]
+        else:
+            award = data[5]
+        contestData["award"] = award #중간만 따서 해야댐
+        contestData["year"] = data[2]
         contestData["img"] = data[8]
 
-        contestData["people"] = []
+        con_detail = OrderedDict()
+        contestData["infoDetail"] = con_detail
+        con_detail["awardDetail"] = data[5]
+
+        con_detail["summary"] = data[7]
+
+        con_detail["people"] = []
+        peo = ""
         for i in range(9,13):
             if data[i] != None:
-                contestData["people"].append(data[i])
+                peo += data[i] + ", "
+        peo = peo[:-1]
 
-        contestData["calendar"] = []
+        contestData["people"] = peo
+
+        con_detail["calendar"] = []
         x = data[13].split(",")
         for y in x:
             z = y.strip()
-            contestData["calendar"].append(z)
+            con_detail["calendar"].append(z)
 
-        contestData["githubLink"] = data[14]
-        contestData["youtubuLink"] = data[15]
-        contestData["serviceLink"] = data[16]
-        contestData["skills"] = data[17]
+        con_detail["gitLink"] = data[14]
+        con_detail["youtubuLink"] = data[15]
+        con_detail["serviceLink"] = data[16]
+        con_detail["skills"] = data[17]
 
 
         locals()[str(data[1]) + "_" + str(data[2]) + "_team"][data[3]] = contestData
 
     # Print JSON
-    with open('test.json', 'w', encoding="utf-8") as make_file:
+    with open('testforios.json', 'w', encoding="utf-8") as make_file:
         json.dump(con_department, make_file, ensure_ascii=False, indent="\t")
 
+makejson(None,None,None)

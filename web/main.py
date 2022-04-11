@@ -1,20 +1,19 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 import readJson
-from flask_restx import Api, Resource, reqparse
 
-app = Flask(__name__)
-app.config['JSON_AS_ASCII'] = False
-
-api = Api(app, version='1.0', title='API 문서', description='Swagger 문서', doc="/api-docs")
-test_api = api.namespace('test', description='조회 API')
+api = Flask(__name__)
+api.config['JSON_AS_ASCII'] = False
 
 
+@api.route('/', methods=['GET', 'POST'])
+def get():
 
-@test_api.route('/get', methods=['GET', 'POST'])
-class Test(Resource):
-    def get(self):
-        temp = readJson.read_json()
-        return jsonify(temp)
+    part = request.args.get('part', None)
+    year = request.args.get('year', None)
+    id = request.args.get('id', None)
+
+    temp = readJson.read_json(part, year, id)
+    return jsonify(temp)
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    api.run(debug=True, host='0.0.0.0', port=5000)

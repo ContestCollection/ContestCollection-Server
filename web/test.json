@@ -32,11 +32,11 @@
 				"name": "Air-Alarm",
 				"award": "2021년 대상 인기상",
 				"subTitle": "실시간 미세먼지 및 공기질 측정기",
-				"summary": "미등록",
+				"summary": "Air-Alarm은 미세먼지, Co2, 온도, 습도를 측정해주는 공기질 측정기입니다. 기상청 공기질 데이터까지 제공하고 있어, 우리집 공기질과 우리 동네 공기질을 비교하여 볼 수도 있습니다. 기존의 공기질 측정기에 비해 저렴한 가격과 다양한 기능으로 차별화를 이룬 제품입니다.",
 				"category": [
 					"IT"
 				],
-				"img": "미등록",
+				"img": "https://avatars.githubusercontent.com/u/87899594?s=200&v=4",
 				"people": [
 					"201914042 손창하",
 					"201914000 고병우",
@@ -55,13 +55,13 @@
 			"team3": {
 				"id": 2,
 				"name": "유저 트레이더스",
-				"award": "미등록",
+				"award": "2021년 은상",
 				"subTitle": "중고 거래 서비스",
-				"summary": "미등록",
+				"summary": "회원이라는 의미의 user + 상인, 거래라는 의미의 Traders를 합쳐 사용자나 회원이 직접 상인이 되어 거래한다라는 의미를 가진 성공회대 중고거래 서비스 유저 트레이더스입니다.",
 				"category": [
 					"IT"
 				],
-				"img": "미등록",
+				"img": "https://i.postimg.cc/pdr9zbVj/image.png",
 				"people": [
 					"202014000 정재빈",
 					"202014000 박형준"
@@ -71,19 +71,19 @@
 				],
 				"githubLink": "미등록",
 				"youtubuLink": "https://youtu.be/5fMI9WA99kk",
-				"serviceLink": "미등록",
+				"serviceLink": "http://eks-work-frontend-skhu.s3-website.ap-northeast-2.amazonaws.com/",
 				"skills": "Spring Boot, JPA, Jpql, Querydsl"
 			},
 			"team4": {
 				"id": 3,
 				"name": "컴비",
-				"award": "미등록",
+				"award": "2021년 장려상",
 				"subTitle": "인공지능 수화 번역 시스템",
-				"summary": "미등록",
+				"summary": "인공지능이 크게 발달해 많은 제품에 인공지능이 탑재되고 있지만, 장애인을 위한 제품은 아직도 부족한 편입니다. 컴비는 청각 장애인과 비장애인 간의 의사소통의 벽을 허물고자 개발된 실시간 수어 인식 시스템입니다.",
 				"category": [
 					"IT"
 				],
-				"img": "미등록",
+				"img": "https://i.postimg.cc/W1XFdbVj/image.png",
 				"people": [
 					"201814066 김기범"
 				],
@@ -98,13 +98,13 @@
 			"team5": {
 				"id": 4,
 				"name": "GITY",
-				"award": "미등록",
+				"award": "2021년 동상",
 				"subTitle": "유튜브 이미지 크롤링 시스템",
-				"summary": "미등록",
+				"summary": "최근 인공지능이 큰 이슈로 자리잡고있습니다. 이 인공지능을 학습시키기 위해서는 데이터가 필수적인데, 여러 인공지능들이 데이터 부족으로 고충을 겪고 있습니다. GITY는 유튜브를 이용해 이미지 데이터를 가져와 데이터로 제공해주어 데이터 부족을 해결하고자 합니다.",
 				"category": [
 					"IT"
 				],
-				"img": "미등록",
+				"img": "https://i.postimg.cc/YSPvxnjs/image.png\n",
 				"people": [
 					"201614000 정민혁",
 					"201614000 이제헌",
@@ -121,13 +121,13 @@
 			"team6": {
 				"id": 5,
 				"name": "ENCHANT-SHOOTER",
-				"award": "미등록",
+				"award": "2021년 동상",
 				"subTitle": "최대한 오래 살아남아 포인트를 높여라!",
-				"summary": "미등록",
+				"summary": "맵 곳곳에서 무한히 쏟아지는 귀여운 몬스터, 몬스터를 처치해 얻는 고유한 특징의 속성 탄환, 콜로세움 스타일의 맵에서 벌어지는 생존싸움, 화려하고 중독성있는 그래픽효과, 캐주얼하게 움직이며 총을 쏘는 run&gun 스타일이라는 특징을 가진 슈팅게임 Enchant Shooter입니다.",
 				"category": [
 					"IT"
 				],
-				"img": "미등록",
+				"img": "https://i.postimg.cc/DZb8prXy/image.png\n",
 				"people": [
 					"201914140 김승기",
 					"202014049 이유나"
@@ -143,13 +143,13 @@
 			"team7": {
 				"id": 6,
 				"name": "the pad",
-				"award": "미등록",
+				"award": "2021년 장려상",
 				"subTitle": "2D 애니메이션 아이패드에 대한 로망",
-				"summary": "미등록",
+				"summary": "아이패드를 가지고 싶어하는 마음을 상상력으로 풀어냄으로써 아이패드를 가지고 싶은 심정을 재미있게 표현하고 보는 이에게 재미와 공감을 느낄 수 있도록 제작한 애니메이션 the pad입니다.",
 				"category": [
 					"IT"
 				],
-				"img": "미등록",
+				"img": "https://i.postimg.cc/XY3dZzyK/image.png\n",
 				"people": [
 					"201813000 김지인",
 					"201813000 채나연"
@@ -166,13 +166,13 @@
 			"team8": {
 				"id": 7,
 				"name": "청약패스",
-				"award": "미등록",
-				"subTitle": "청약 사전 자격 진단 및 관리 서비스",
-				"summary": "미등록",
+				"award": "2021년 금상 인기상",
+				"subTitle": "청약자격 여부 점검 서비스",
+				"summary": "청약패스는 '청약'과 '통과'의 합성어로, 복잡한 청약 시스템의 틀을 깨고 청약패스의 자격 점검 시스템을 통해 부적격 없이 한번에 청약에 당첨되었으면 하는 바람이 깃든 팀, 서비스명입니다. \\n 핵심 기능으로는 청약 자격 여부 점검, 가/배점계산, 부적격 사례 및 FAQ제공이 있습니다.",
 				"category": [
 					"IT"
 				],
-				"img": "미등록",
+				"img": "https://i.postimg.cc/76Fh75bG/image.png",
 				"people": [
 					"201632035 한지혜",
 					"201814135 신수연",
@@ -180,25 +180,26 @@
 					"201814138 이지은"
 				],
 				"calendar": [
-					"2021.3~4: 계획 및 분석",
-					"5~7: 설계",
-					"8~9: 제작 및 테스트"
+					"2021.3: 청약 제도 학습\\n 2021.4: 프로젝트 진행 계획",
+					"기능 및 와이어프레임 제작 \\n 2021.5: 백: 데이터베이스 구축",
+					"프론트: 디자인 설계\\n 2021.6~8: 개발 \\n 2021.9~11: 테스트 진행",
+					"유지보수"
 				],
 				"githubLink": "https://github.com/devUnnies/chungyakpass",
 				"youtubuLink": "https://youtu.be/l2FzUBb-25Y",
 				"serviceLink": "미등록",
-				"skills": "React, SpringBoot, AWS EC2"
+				"skills": "SpringBoot, SpringDataJpa, Spring Security, React, axios"
 			},
 			"team9": {
 				"id": 8,
 				"name": "나만의 웹 다이어리",
-				"award": "미등록",
+				"award": "2021년 동상",
 				"subTitle": "일정, 계획, 시간표, 버킷리스트 등을 기록하는 나만의 웹 다이어리",
-				"summary": "미등록",
+				"summary": "하루 일정, 일주일 계획, 시간표, 버킷 리스트, 일기, 메모장을 기록하는 나만의 웹 다이어리입니다. 실물 다이어리는 잊어버리거나, 아이디어가 떠올라도 다이어리를 찾다가 잊어버리는 아쉬움을 해결하기 위해 만들게 된 프로젝트입니다.",
 				"category": [
 					"IT"
 				],
-				"img": "미등록",
+				"img": "https://i.postimg.cc/9MJw7mZy/image.png",
 				"people": [
 					"201814038 김보미",
 					"201814096 임수빈"
@@ -216,13 +217,13 @@
 			"team10": {
 				"id": 9,
 				"name": "Gifty",
-				"award": "미등록",
+				"award": "2021년 장려상",
 				"subTitle": "기프티콘 관리 앱",
-				"summary": "미등록",
+				"summary": "다들 한번쯤은 기프티콘으로 선물을 주거나 받아본 경험이 있을 것입니다. 카카오톡 선물하기를 통해 선물을 하게 되면 카카오톡 보관함에 저장이 되어 관리가 가능하지만, 내가 사용하지 않는 기프티콘을 양도하거나, 카카오톡이 아닌 다른 플랫폼에서 생성된 기프티콘은 캡처된 사진으로 저장하는 경우가 많습니다. 이런 경우 갤러리를 하나하나 찾아봐야하는 불편함이 있습니다. Gifty는 이러한 불편함을 해결하고자 기획된 어플리케이션입니다.",
 				"category": [
 					"IT"
 				],
-				"img": "미등록",
+				"img": "https://i.postimg.cc/dQb8F1sx/image.png\n",
 				"people": [
 					"000000000 주동석"
 				],
@@ -245,11 +246,11 @@
 				"name": "성공회대 기자재대여시스템",
 				"award": "미등록",
 				"subTitle": "성공회대학교 기자재 대여 관리 시스템",
-				"summary": "미등록",
+				"summary": "교내의 다양한 기자재(교재, 사물함, 노트북 등)의 대여 및 반납 기능을 지원하는 웹 서비스입니다. 교내에 넘쳐나는 방치된 교재를 체계적으로 재사용하기 위해 기획되었습니다.",
 				"category": [
 					"SW"
 				],
-				"img": "미등록",
+				"img": "https://i.postimg.cc/SxyYQYwD/image.png\n",
 				"people": [
 					"201732009 김윤서",
 					"201732005 김문수"
@@ -265,13 +266,13 @@
 			"team2": {
 				"id": 16,
 				"name": "성공회대 출석체크",
-				"award": "미등록",
+				"award": "2020년 동상",
 				"subTitle": "성공회대 QR코드 출석 체크",
-				"summary": "미등록",
+				"summary": "교수와 학생 모두가 출석체크를 편하게 하기 위해 만들어진 시스템으로, 교수가 성공회대 출석체크 웹페이지를 통해 자신의 과목 QR 코드를 띄우면 학생이 어플을 통해 스캔하여 출석체크를 할 수 있는 시스템입니다.",
 				"category": [
 					"SW"
 				],
-				"img": "미등록",
+				"img": "https://i.postimg.cc/YCzFHz0X/image.png",
 				"people": [
 					"201732033 정은애"
 				],
@@ -284,15 +285,15 @@
 				"skills": "JPA Spring Jquery Bootstrap"
 			},
 			"team3": {
-				"id": 18,
+				"id": 17,
 				"name": "냉장고를 부탁해",
-				"award": "미등록",
+				"award": "2020년 은상",
 				"subTitle": "안드로이드 기반 냉장고 관리 시스템",
-				"summary": "미등록",
+				"summary": "기존의 냉장고에 관리기능 하나 추가된것 만으로 가격이 급격하게 높아진다는 단점을 해결하고자, 안드로이드 어플리케이션을 이용해 보급형으로 제작해 다양한 사용자가 이용할 수 있도록 제작한 앱입니다.",
 				"category": [
 					"SW"
 				],
-				"img": "미등록",
+				"img": "https://i.postimg.cc/J4jjzLt4/image.png\n",
 				"people": [
 					"201814066 김기범",
 					"201814003 김은정"
@@ -310,7 +311,7 @@
 			"team1": {
 				"id": 10,
 				"name": "Calcuator",
-				"award": "미등록",
+				"award": "2019년 은상",
 				"subTitle": "미등록",
 				"summary": "미등록",
 				"category": [
@@ -331,7 +332,7 @@
 			"team2": {
 				"id": 11,
 				"name": "Monity",
-				"award": "미등록",
+				"award": "2019년 동상",
 				"subTitle": "Monitoring + Unity",
 				"summary": "미등록",
 				"category": [
@@ -354,7 +355,7 @@
 			"team3": {
 				"id": 12,
 				"name": "HalliGalli",
-				"award": "미등록",
+				"award": "2019년 금상",
 				"subTitle": "미등록",
 				"summary": "미등록",
 				"category": [
@@ -375,7 +376,7 @@
 			"team4": {
 				"id": 13,
 				"name": "우리들의 제목학원",
-				"award": "미등록",
+				"award": "2019년 금상",
 				"subTitle": "미등록",
 				"summary": "미등록",
 				"category": [
@@ -396,7 +397,7 @@
 			"team5": {
 				"id": 14,
 				"name": "SKHU졸업관리시스템",
-				"award": "미등록",
+				"award": "2019년 금상",
 				"subTitle": "졸업학점관리시스템",
 				"summary": "미등록",
 				"category": [
