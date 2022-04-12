@@ -66,3 +66,21 @@ def getFromDB2(part, year, id):
     #conn.close()
 
     return rows
+
+'''
+def updateNum():
+    cur.execute(f"SELECT member4 FROM contestData")
+    rows = cur.fetchall()
+    for i in range(len(rows)):
+        t = rows[i][0]
+        if t != None:
+            t = t.split()
+            cur.execute(f"UPDATE contestData SET member4 = '{t[1]}' WHERE rowid = {i + 1}")
+            conn.commit()
+        else:
+            cur.execute(f"UPDATE contestData SET member4 = NULL WHERE rowid = {i + 1}")
+            conn.commit()
+
+    cur.execute(f"SELECT member4 FROM contestData")
+    print(cur.fetchall())
+'''
