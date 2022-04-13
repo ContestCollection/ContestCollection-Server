@@ -84,3 +84,8 @@ def updateNum():
     cur.execute(f"SELECT member4 FROM contestData")
     print(cur.fetchall())
 '''
+
+cur.execute(f"UPDATE contestData SET img = 'https://i.postimg.cc/5yrRzgK4/2.png' WHERE rowid = 24")
+conn.commit()
+for i in getFromDB():
+    print(i)
