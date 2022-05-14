@@ -83,6 +83,3 @@ def updateNum():
     cur.execute(f"SELECT member4 FROM contestData")
     print(cur.fetchall())
 '''
-insertToDB()
-for i in getFromDB():
-    print(i)
