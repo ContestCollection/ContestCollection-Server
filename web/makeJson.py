@@ -11,6 +11,7 @@ def makejson(part, year, id):
     # IT_YEAR_team 팀 나누는 파트
     IT_2021_team = OrderedDict()
     IT_2020_team = OrderedDict()
+    IT_2019_team = OrderedDict()
 
     # con_year_IT 파트
     con_year_IT = OrderedDict()

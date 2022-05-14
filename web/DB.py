@@ -9,7 +9,6 @@ conn = sqlite3.connect(path, check_same_thread=False)
 cur = conn.cursor()
 
 def mkDB():
-    #id 추가해야함
     cur.execute("""CREATE TABLE contestData(
     part TEXT, 
     year INTEGER, 
@@ -84,8 +83,6 @@ def updateNum():
     cur.execute(f"SELECT member4 FROM contestData")
     print(cur.fetchall())
 '''
-
-cur.execute(f"UPDATE contestData SET img = 'https://i.postimg.cc/5yrRzgK4/2.png' WHERE rowid = 24")
-conn.commit()
+insertToDB()
 for i in getFromDB():
     print(i)

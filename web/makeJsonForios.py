@@ -5,11 +5,12 @@ from DB import getFromDB, getFromDB2
 def makejson():
 
     t = getFromDB()
-    #IT인지랑 2021인지랑 등등 체크해야함
+    #IT인지 체크 ㄱ
 
     contestData = OrderedDict()
     contestData["headerList"] = []
     year = 2021
+    part = "SW"
 
     #대상
     prizes = ["대상", "금상", "은상", "동상", "장려상"]
@@ -27,13 +28,13 @@ def makejson():
         for i in range(len(t)):
             temp = t[i][5].split()
             if len(temp) != 1:
-                if temp[1] == prize and t[i][2] == year:
+                if t[i][1] == part and temp[1] == prize and t[i][2] == year:
                     print(t[i])
                     prizeData_one_detail = OrderedDict()
                     prizeData_one_detail["id"] = detailid
                     detailid += 1
                     prizeData_one_detail["name"] = t[i][4]
-                    prizeData_one_detail["subTitle"] = t[i][5]
+                    prizeData_one_detail["subTitle"] = t[i][6]
                     prizeData_one_detail["img"] = t[i][8]
                     prizeData_one_detail_info = OrderedDict()
                     prizeData_one_detail_info["awardDetail"] = t[i][5]
@@ -46,7 +47,7 @@ def makejson():
                     people = people.strip()
                     people = people.strip(",")
                     prizeData_one_detail_info["people"] = people
-                    prizeData_one_detail_info["calender"] = t[i][13]
+                    prizeData_one_detail_info["calendar"] = t[i][13]
                     prizeData_one_detail_info["gitLink"] = t[i][14]
 
                     youtube = t[i][15].split("/")
@@ -76,7 +77,7 @@ def makejson():
 
 
     # Print JSON
-    with open('ttap.json', 'w', encoding="utf-8") as make_file:
+    with open('PrizeList_id=2,year=2021.json', 'w', encoding="utf-8") as make_file:
         json.dump(contestData, make_file, ensure_ascii=False, indent="\t")
 
 makejson()
