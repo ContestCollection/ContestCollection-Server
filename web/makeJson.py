@@ -1,10 +1,11 @@
 import json
 from collections import OrderedDict
+
 from DB import getFromDB, getFromDB2
 
-def makejson(part, year, id):
-    if part or year or id:
-        datas = getFromDB2(part, year, id)
+def makejson(part, year):
+    if part or year:
+        datas = getFromDB2(part, year)
     else:
         datas = getFromDB()
 
@@ -78,6 +79,8 @@ def makejson(part, year, id):
         locals()[str(data[1]) + "_" + str(data[2]) + "_team"][data[3]] = contestData
 
     # Print JSON
-    with open('test.json', 'w', encoding="utf-8") as make_file:
-        json.dump(con_department, make_file, ensure_ascii=False, indent="\t")
-
+    #with open('test.json', 'w', encoding="utf-8") as make_file:
+        #json.dump(con_department, make_file, ensure_ascii=False, indent="\t")
+    #return json.dumps(con_department, ensure_ascii=False, indent=4)
+    #덤프 하지 마십쇼... 괜히 이상해진다...
+    return con_department

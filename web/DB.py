@@ -51,15 +51,15 @@ def getFromDB():
 
     return rows
 
-def getFromDB2(part, year, id):
+def getFromDB2(part, year):
     if part and year:
         cur.execute(f"SELECT rowid, * FROM contestData WHERE part = '{part}' AND year = '{year}'")
     elif part:
         cur.execute(f'SELECT rowid, * FROM contestData WHERE part = "{part}"')
     elif year:
         cur.execute(f"SELECT rowid, * FROM contestData WHERE year = '{year}'")
-    elif id:
-        cur.execute(f"SELECT rowid, * FROM contestData WHERE rowid = '{id}'")
+    #elif id:
+        #cur.execute(f"SELECT rowid, * FROM contestData WHERE rowid = '{id}'")
 
     rows = cur.fetchall()
     #conn.close()
