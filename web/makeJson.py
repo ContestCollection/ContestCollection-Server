@@ -4,11 +4,13 @@ from collections import OrderedDict
 from DB import getFromDB, getFromDB2
 
 def makejson(part, year):
+    '''
     if part or year:
         datas = getFromDB2(part, year)
     else:
         datas = getFromDB()
-
+    '''
+    datas = getFromDB2(part, year)
     # IT_YEAR_team 팀 나누는 파트
     IT_2021_team = OrderedDict()
     IT_2020_team = OrderedDict()

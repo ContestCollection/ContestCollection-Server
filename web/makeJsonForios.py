@@ -2,15 +2,12 @@ import json
 from collections import OrderedDict
 from DB import getFromDB, getFromDB2
 
-def makejson():
-
-    t = getFromDB()
+def makejson(part, year):
+    t = getFromDB2(part, year)
     #IT인지 체크 ㄱ
 
     contestData = OrderedDict()
     contestData["headerList"] = []
-    year = 2021
-    part = "SW"
 
     #대상
     prizes = ["대상", "금상", "은상", "동상", "장려상"]
@@ -77,7 +74,6 @@ def makejson():
 
 
     # Print JSON
-    with open('PrizeList_id=2,year=2021.json', 'w', encoding="utf-8") as make_file:
-        json.dump(contestData, make_file, ensure_ascii=False, indent="\t")
-
-makejson()
+    #with open('PrizeList_id=2,year=2021.json', 'w', encoding="utf-8") as make_file:
+        #json.dump(contestData, make_file, ensure_ascii=False, indent="\t")
+    return contestData
