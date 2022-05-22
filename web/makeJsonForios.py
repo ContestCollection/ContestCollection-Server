@@ -26,7 +26,6 @@ def makejson(part, year):
             temp = t[i][5].split()
             if len(temp) != 1:
                 if t[i][1] == part and temp[1] == prize and t[i][2] == year:
-                    print(t[i])
                     prizeData_one_detail = OrderedDict()
                     prizeData_one_detail["id"] = detailid
                     detailid += 1
