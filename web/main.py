@@ -1,11 +1,12 @@
 import os
-
 import werkzeug
 from flask import Flask, jsonify, request
 from flask_restful import Resource, Api, reqparse
 import readJson
 import makeJson
 from web import makeJsonForios
+
+import openpyxl as oxl
 
 app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
@@ -44,6 +45,12 @@ class Upload(Resource):
         else:
             file_path = os.path.join(os.getcwd(), file_object.filename)
             file_object.save(dst=file_object.filename)
+
+            temp = oxl.load_workbook('testexcel.xlsx')
+            temp = temp['Sheet1']
+            for row in temp.rows:
+                print(row)
+
             return jsonify({'result':file_path})
 
 api.add_resource(Upload, '/upload')
