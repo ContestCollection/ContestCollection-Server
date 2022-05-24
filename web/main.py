@@ -1,13 +1,18 @@
+import os
+
+import werkzeug
 from flask import Flask, jsonify, request
+from flask_restful import Resource, Api, reqparse
 import readJson
 import makeJson
 from web import makeJsonForios
 
-api = Flask(__name__)
-api.config['JSON_AS_ASCII'] = False
+app = Flask(__name__)
+app.config['JSON_AS_ASCII'] = False
+api = Api(app)
 
 
-@api.route('/web/<part>/<int:year>', methods=['GET', 'POST'])
+@app.route('/web/<part>/<int:year>', methods=['GET', 'POST'])
 def webGet(part, year):
     '''
     if part == "all":
@@ -20,10 +25,33 @@ def webGet(part, year):
     temp = makeJson.makejson(part, year)
     return jsonify(temp)
 
-@api.route('/ios/<part>/<int:year>', methods=['GET', 'POST'])
+@app.route('/ios/<part>/<int:year>', methods=['GET', 'POST'])
 def iosGet(part, year):
     temp = makeJsonForios.makejson(part, year)
     return jsonify(temp)
 
+
+class Upload(Resource):
+    def post(self):
+        parser = reqparse.RequestParser()
+        parser.add_argument('file', type=werkzeug.datastructures.FileStorage, location='files')
+        args = parser.parse_args()
+
+        file_object = args['file']
+
+        if file_object is None:
+            return jsonify({'result': 'false'})
+        else:
+            file_path = os.path.join(os.getcwd(), file_object.filename)
+            file_object.save(dst=file_object.filename)
+            with open('log.txt', 'a') as f:
+                f.write(file_object)
+                f.write(type(file_object))
+            return jsonify({'result':file_path})
+
+api.add_resource(Upload, '/upload')
+
+
+
 if __name__ == '__main__':
-    api.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0', port=5050)
