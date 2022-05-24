@@ -50,7 +50,7 @@ class Upload(Resource):
             temp = temp['Sheet1']
             for row in temp.rows:
                 for cell in row:
-                    print(cell)
+                    print(cell.value)
 
             return jsonify({'result':file_path})
 
