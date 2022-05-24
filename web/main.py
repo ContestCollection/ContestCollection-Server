@@ -49,7 +49,8 @@ class Upload(Resource):
             temp = oxl.load_workbook('testexcel.xlsx')
             temp = temp['Sheet1']
             for row in temp.rows:
-                print(row)
+                for cell in row:
+                    print(cell)
 
             return jsonify({'result':file_path})
 
