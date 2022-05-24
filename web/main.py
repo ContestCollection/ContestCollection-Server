@@ -45,7 +45,6 @@ class Upload(Resource):
             file_path = os.path.join(os.getcwd(), file_object.filename)
             file_object.save(dst=file_object.filename)
             with open('log.txt', 'a') as f:
-                f.write(file_object)
                 f.write(type(file_object))
             return jsonify({'result':file_path})
 
