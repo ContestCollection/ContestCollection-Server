@@ -5,11 +5,13 @@ from flask_restful import Resource, Api, reqparse
 import readJson
 import makeJson
 from web import makeJsonForios
+from flask_cors import CORS
 
 import openpyxl as oxl
 
 app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
+CORS(app)
 api = Api(app)
 
 
