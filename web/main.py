@@ -47,13 +47,13 @@ class Upload(Resource):
         else:
             file_path = os.path.join(os.getcwd(), file_object.filename)
             file_object.save(dst=file_object.filename)
-            '''
+
             temp = oxl.load_workbook('testexcel.xlsx')
             temp = temp['Sheet1']
             for row in temp.rows:
                 for cell in row:
                     print(cell.value)
-            '''
+
             return jsonify({'result':file_path})
 
 api.add_resource(Upload, '/upload')
