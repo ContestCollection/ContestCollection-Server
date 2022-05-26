@@ -13,6 +13,7 @@ app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
 CORS(app)
 api = Api(app)
+CORS(api)
 
 
 @app.route('/web/<part>/<int:year>', methods=['GET', 'POST'])
