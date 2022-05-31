@@ -30,7 +30,7 @@ def mkDB():
     """)
     # 16개
 
-
+'''
 def insertToDB():
     with open("data.txt", "r", encoding='UTF-8') as f:
         temp = []
@@ -43,6 +43,18 @@ def insertToDB():
         conn.commit()
         #conn.close()
         print("data insert complete")
+'''
+
+def insertToDB(text):
+    for t in text:
+        t = t.strip()
+        if t == "NULL":
+            t = None
+        temp.append(t)
+    cur.execute("INSERT INTO contestData VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", temp)
+    conn.commit()
+    # conn.close()
+    print("data insert complete")
 
 def getFromDB():
     cur.execute("SELECT rowid, * FROM contestData")
@@ -83,3 +95,6 @@ def updateNum():
     cur.execute(f"SELECT member4 FROM contestData")
     print(cur.fetchall())
 '''
+
+for i in getFromDB():
+    print(i)

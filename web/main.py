@@ -6,7 +6,7 @@ import readJson
 import makeJson
 from web import makeJsonForios
 from flask_cors import CORS
-
+import DB
 import openpyxl as oxl
 
 app = Flask(__name__)
@@ -46,13 +46,24 @@ class Upload(Resource):
             return jsonify({'result': 'false'})
         else:
             file_path = os.path.join(os.getcwd(), file_object.filename)
+            fileName = file_object.filename
             file_object.save(dst=file_object.filename)
 
-            temp = oxl.load_workbook('testexcel.xlsx')
+            temp = oxl.load_workbook(fileName)
             temp = temp['Sheet1']
-            for row in temp.rows:
-                for cell in row:
-                    print(cell.value)
+            #2 ~ 18까지 데이터 있음.
+            for column in temp.columns:
+                #1번 행이 비었다는건 A열이라는 뜻이므로 스킵
+                if column[1] == None:
+                    continue
+                #2번 행이 비었다는건 비어있는 열이라는 뜻이므로 스톱
+                elif column[2] == None:
+                    break
+
+                text = column[2:19]
+                print(text)
+                DB.insertToDB(text)
+                
 
             return jsonify({'result':file_path})
 
