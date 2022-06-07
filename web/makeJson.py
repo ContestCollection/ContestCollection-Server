@@ -12,32 +12,38 @@ def makejson(part, year):
     '''
     datas = getFromDB2(part, year)
     # IT_YEAR_team 팀 나누는 파트
+    IT_2022_team = OrderedDict()
     IT_2021_team = OrderedDict()
     IT_2020_team = OrderedDict()
     IT_2019_team = OrderedDict()
 
     # con_year_IT 파트
     con_year_IT = OrderedDict()
+    con_year_IT[2022] = IT_2022_team
     con_year_IT[2021] = IT_2021_team
     con_year_IT[2020] = IT_2020_team
 
     # SW_YEAR_team 팀 나누는 파트
+    SW_2022_team = OrderedDict()
     SW_2021_team = OrderedDict()
     SW_2020_team = OrderedDict()
     SW_2019_team = OrderedDict()
 
     # con_year_SW 파트
     con_year_SW = OrderedDict()
+    con_year_SW[2022] = SW_2022_team
     con_year_SW[2021] = SW_2021_team
     con_year_SW[2020] = SW_2020_team
     con_year_SW[2019] = SW_2019_team
 
     # MC_YEAR_team 팀 나누는 파트
+    MC_2022_team = OrderedDict()
     MC_2021_team = OrderedDict()
     MC_2020_team = OrderedDict()
 
     # con_year_MC 파트
     con_year_MC = OrderedDict()
+    con_year_MC[2022] = MC_2022_team
     con_year_MC[2021] = MC_2021_team
     con_year_MC[2020] = MC_2020_team
 

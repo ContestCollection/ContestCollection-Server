@@ -46,7 +46,9 @@ def insertToDB():
 '''
 
 def insertToDB(text):
+    temp = []
     for t in text:
+        t = t.value
         t = t.strip()
         if t == "NULL":
             t = None
