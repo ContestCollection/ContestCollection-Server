@@ -53,36 +53,15 @@ class Upload(Resource):
             temp = temp['Sheet1']
             #2 ~ 18까지 데이터 있음.
             for column in temp.columns:
-                if column[0].value == "category":
-                    print("스킵")
-                    continue
-
-                #1번 행이 비었다는건 A열이라는 뜻이므로 스킵
-                if column[0] == None:
-                    print("none")
-                    continue
                 #2번 행이 비었다는건 비어있는 열이라는 뜻이므로 스톱
-                elif column[0].value == None:
-                    print("valuenone")
+                if column[0].value == None:
                     continue
-
-                elif column[1] == None:
-                    print("1none")
-                    break
 
                 elif column[1].value == None:
                     print("1valuenone")
                     break
 
-                elif column[2] == None:
-                    print("2none")
-                    break
-
-                elif column[2].value == None:
-                    print("2valuenone")
-                    break
-
-                text = column[2:19]
+                text = column[1:19]
                 DB.insertToDB(text)
                 
 
