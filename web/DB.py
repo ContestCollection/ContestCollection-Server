@@ -49,7 +49,11 @@ def insertToDB(text):
     temp = []
     for t in text:
         t = t.value
-        t = t.strip()
+        try:
+            t = t.strip()
+        except:
+            pass
+
         if t == "NULL":
             t = None
         temp.append(t)
