@@ -53,6 +53,7 @@ def insertToDB(text):
         if t == "NULL":
             t = None
         temp.append(t)
+    print(temp)
     cur.execute("INSERT INTO contestData VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", temp)
     conn.commit()
     # conn.close()
