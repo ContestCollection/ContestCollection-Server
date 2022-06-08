@@ -58,7 +58,6 @@ class Upload(Resource):
                     continue
 
                 elif column[1].value == None:
-                    print("1valuenone")
                     break
 
                 text = column[1:19]

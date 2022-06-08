@@ -56,7 +56,7 @@ def insertToDB(text):
             print(t, "는 숫자")
             pass
 
-        if t == "NULL":
+        if t == "NULL" or t == "None":
             t = None
         temp.append(t)
     print(temp)
