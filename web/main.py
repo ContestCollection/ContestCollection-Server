@@ -55,10 +55,22 @@ class Upload(Resource):
             del temp.columns[0]
             for column in temp.columns:
                 #1번 행이 비었다는건 A열이라는 뜻이므로 스킵
-                if column[1] == None:
+                if column[0] == None:
                     continue
                 #2번 행이 비었다는건 비어있는 열이라는 뜻이므로 스톱
+                elif column[0].value == None:
+                    continue
+
+                elif column[1] == None:
+                    break
+
+                elif column[1].value == None:
+                    break
+
                 elif column[2] == None:
+                    break
+
+                elif column[2].value == None:
                     break
 
                 text = column[2:19]
