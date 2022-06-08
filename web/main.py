@@ -52,7 +52,6 @@ class Upload(Resource):
             temp = oxl.load_workbook(fileName)
             temp = temp['Sheet1']
             #2 ~ 18까지 데이터 있음.
-            del temp.columns[0]
             for column in temp.columns:
                 #1번 행이 비었다는건 A열이라는 뜻이므로 스킵
                 if column[0] == None:
