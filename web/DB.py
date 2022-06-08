@@ -51,7 +51,9 @@ def insertToDB(text):
         t = t.value
         try:
             t = t.strip()
-        except:
+        except AttributeError as e:
+            print(e)
+            print(t, "는 숫자")
             pass
 
         if t == "NULL":
