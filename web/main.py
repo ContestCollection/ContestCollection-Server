@@ -2,6 +2,8 @@ import os
 import werkzeug
 from flask import Flask, jsonify, make_response, request, current_app
 from flask_restful import Resource, Api, reqparse
+from flask_restful.utils.cors import crossdomain
+
 import readJson
 import makeJson
 from web import makeJsonForios
@@ -13,7 +15,7 @@ from datetime import timedelta
 
 app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
-CORS(app, resources={r'*': {'origins': '*'}})
+CORS(app, resources={r'*': {'origins': 'http://localhost:3000'}})
 api = Api(app)
 
 
@@ -31,6 +33,7 @@ def webGet(part, year):
     return jsonify(temp)
 
 @app.route('/ios/<part>/<int:year>', methods=['GET', 'POST'])
+@crossdomain(origin='*')
 def iosGet(part, year):
     temp = makeJsonForios.makejson(part, year)
     return jsonify(temp)
