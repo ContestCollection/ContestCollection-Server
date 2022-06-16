@@ -35,7 +35,7 @@ def iosGet(part, year):
 
 #class Upload(Resource):
 @app.route('/upload', methods=['GET', 'POST'])
-def post(self, Resource):
+def post():
     parser = reqparse.RequestParser()
     parser.add_argument('file', type=werkzeug.datastructures.FileStorage, location='files')
     args = parser.parse_args()
